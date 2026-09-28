@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard - JobHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Job<span>Hub</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="employer.html" class="active">Employer</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Logout</a>
+    </div>
+
+</header>
+
+
+<section class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+            <h1>Employer Dashboard</h1>
+            <p>Manage your job postings and candidates.</p>
+        </div>
+
+        <button class="primary-btn" onclick="postJob()">
+            + Post a Job
+        </button>
+
+    </div>
+
+
+    <div class="dashboard-stats">
+
+        <div>
+            <h2>8</h2>
+            <p>Active Jobs</p>
+        </div>
+
+        <div>
+            <h2>248</h2>
+            <p>Total Applicants</p>
+        </div>
+
+        <div>
+            <h2>42</h2>
+            <p>Shortlisted</p>
+        </div>
+
+        <div>
+            <h2>15</h2>
+            <p>Interviews</p>
+        </div>
+
+    </div>
+
+
+    <section class="dashboard-card">
+
+        <h2>Active Job Postings</h2>
+
+        <div class="job-table">
+
+            <div class="table-header">
+                <span>Job Title</span>
+                <span>Applicants</span>
+                <span>Status</span>
+                <span>Action</span>
+            </div>
+
+
+            <div class="table-row">
+
+                <span>Java Developer</span>
+
+                <span>85</span>
+
+                <span class="status success">
+                    Active
+                </span>
+
+                <button onclick="viewApplicants()">
+                    View
+                </button>
+
+            </div>
+
+
+            <div class="table-row">
+
+                <span>Data Analyst</span>
+
+                <span>64</span>
+
+                <span class="status success">
+                    Active
+                </span>
+
+                <button onclick="viewApplicants()">
+                    View
+                </button>
+
+            </div>
+
+
+            <div class="table-row">
+
+                <span>Frontend Developer</span>
+
+                <span>99</span>
+
+                <span class="status pending">
+                    Review
+                </span>
+
+                <button onclick="viewApplicants()">
+                    View
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 JobHub. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
