@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather App</h1>
+
+        <p class="subtitle">
+            Check the current weather of any city
+        </p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <h2 id="cityName">Search a City</h2>
+
+            <p id="date">--</p>
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <h3 id="description">Weather information</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div class="detail">
+                    <span>☁️</span>
+                    <p>Cloudiness</p>
+                    <strong id="clouds">--%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="message" id="message"></p>
+
+        <footer>
+            Weather App | HTML • CSS • JavaScript
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
