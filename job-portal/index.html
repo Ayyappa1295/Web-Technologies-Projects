@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHub - Find Your Dream Job</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Job<span>Hub</span></div>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="employer.html">Employers</a>
+        <a href="candidate.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">🚀 Find Your Future</span>
+
+        <h1>
+            Find Your
+            <span>Dream Job</span>
+            Today
+        </h1>
+
+        <p>
+            Discover thousands of job opportunities from top companies
+            and take the next step in your career.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="homeSearch"
+                placeholder="Job title, skills or keywords"
+            >
+
+            <input
+                type="text"
+                id="homeLocation"
+                placeholder="📍 Location"
+            >
+
+            <button onclick="searchJobs()">Search Jobs</button>
+
+        </div>
+
+        <div class="popular-searches">
+            <strong>Popular:</strong>
+            <span>Java Developer</span>
+            <span>Data Analyst</span>
+            <span>Web Developer</span>
+            <span>Software Engineer</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>25K+</h2>
+        <p>Active Jobs</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>8K+</h2>
+        <p>Companies</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>15K+</h2>
+        <p>Job Seekers</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>12K+</h2>
+        <p>Successful Hires</p>
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <div class="section-heading">
+        <span>EXPLORE OPPORTUNITIES</span>
+        <h2>Popular Job Categories</h2>
+        <p>Find opportunities that match your skills and career goals.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <div class="category-icon">💻</div>
+            <h3>Software Development</h3>
+            <p>4,850 Jobs</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>2,420 Jobs</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>1,850 Jobs</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">📱</div>
+            <h3>Mobile Development</h3>
+            <p>1,620 Jobs</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">☁️</div>
+            <h3>Cloud & DevOps</h3>
+            <p>1,430 Jobs</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">📈</div>
+            <h3>Business & Management</h3>
+            <p>2,110 Jobs</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="featured-jobs">
+
+    <div class="section-heading">
+        <span>NEW OPPORTUNITIES</span>
+        <h2>Featured Jobs</h2>
+        <p>Explore some of the latest opportunities.</p>
+    </div>
+
+    <div class="job-grid">
+
+        <div class="job-card">
+
+            <div class="company-logo">G</div>
+
+            <div class="job-info">
+                <h3>Java Developer</h3>
+                <p>GlobalTech Solutions</p>
+
+                <div class="job-meta">
+                    <span>📍 Bengaluru</span>
+                    <span>💼 Full Time</span>
+                </div>
+
+                <div class="tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>SQL</span>
+                </div>
+
+                <div class="job-bottom">
+                    <strong>₹4 - ₹7 LPA</strong>
+                    <a href="job-details.html">View Job →</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="job-card">
+
+            <div class="company-logo blue">D</div>
+
+            <div class="job-info">
+                <h3>Data Analyst</h3>
+                <p>DataSphere Technologies</p>
+
+                <div class="job-meta">
+                    <span>📍 Hyderabad</span>
+                    <span>💼 Full Time</span>
+                </div>
+
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                </div>
+
+                <div class="job-bottom">
+                    <strong>₹5 - ₹8 LPA</strong>
+                    <a href="job-details.html">View Job →</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="job-card">
+
+            <div class="company-logo purple">W</div>
+
+            <div class="job-info">
+                <h3>Frontend Developer</h3>
+                <p>WebCraft Studio</p>
+
+                <div class="job-meta">
+                    <span>📍 Chennai</span>
+                    <span>💼 Remote</span>
+                </div>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="job-bottom">
+                    <strong>₹4 - ₹6 LPA</strong>
+                    <a href="job-details.html">View Job →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="center-button">
+        <a href="jobs.html" class="primary-btn">View All Jobs →</a>
+    </div>
+
+</section>
+
+
+<section class="how-it-works">
+
+    <div class="section-heading">
+        <span>SIMPLE PROCESS</span>
+        <h2>How JobHub Works</h2>
+    </div>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="step-number">01</div>
+            <h3>Create Profile</h3>
+            <p>Build your professional profile and showcase your skills.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">02</div>
+            <h3>Search Jobs</h3>
+            <p>Find jobs based on your skills, location and interests.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">03</div>
+            <h3>Apply</h3>
+            <p>Apply to jobs with a single click.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">04</div>
+            <h3>Get Hired</h3>
+            <p>Connect with employers and start your career.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <div class="logo">Job<span>Hub</span></div>
+            <p>
+                Connecting talented people with amazing career opportunities.
+            </p>
+        </div>
+
+        <div>
+            <h3>For Candidates</h3>
+            <a href="jobs.html">Browse Jobs</a>
+            <a href="candidate.html">My Dashboard</a>
+            <a href="register.html">Create Profile</a>
+        </div>
+
+        <div>
+            <h3>For Employers</h3>
+            <a href="employer.html">Post a Job</a>
+            <a href="employer.html">Manage Jobs</a>
+            <a href="employer.html">Find Candidates</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 JobHub. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
