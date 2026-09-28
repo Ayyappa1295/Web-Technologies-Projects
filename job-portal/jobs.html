@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - JobHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Job<span>Hub</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html" class="active">Jobs</a>
+        <a href="employer.html">Employers</a>
+        <a href="candidate.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </div>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>Find Your Next Opportunity</h1>
+
+    <p>
+        Search thousands of jobs and discover your next career move.
+    </p>
+
+</section>
+
+
+<section class="job-search">
+
+    <input
+        type="text"
+        id="jobSearch"
+        placeholder="🔎 Search job title or skills..."
+        onkeyup="filterJobs()"
+    >
+
+    <select id="categoryFilter" onchange="filterJobs()">
+        <option value="">All Categories</option>
+        <option value="Software">Software Development</option>
+        <option value="Data">Data Analytics</option>
+        <option value="Design">Design</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+
+    <select id="locationFilter" onchange="filterJobs()">
+        <option value="">All Locations</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Pune">Pune</option>
+        <option value="Remote">Remote</option>
+    </select>
+
+</section>
+
+
+<main class="jobs-container">
+
+    <div class="jobs-list" id="jobsList">
+
+
+        <article class="job-item" data-category="Software" data-location="Bengaluru">
+
+            <div class="company-logo">G</div>
+
+            <div class="job-content">
+
+                <h2>Java Developer</h2>
+
+                <h4>GlobalTech Solutions</h4>
+
+                <div class="job-meta">
+                    <span>📍 Bengaluru</span>
+                    <span>💼 Full Time</span>
+                    <span>🕒 2 days ago</span>
+                </div>
+
+                <p>
+                    Work on enterprise Java applications using Spring Boot,
+                    REST APIs and SQL.
+                </p>
+
+                <div class="tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>SQL</span>
+                </div>
+
+                <div class="job-footer">
+                    <strong>₹4 - ₹7 LPA</strong>
+                    <a href="job-details.html">View Details →</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="job-item" data-category="Data" data-location="Hyderabad">
+
+            <div class="company-logo blue">D</div>
+
+            <div class="job-content">
+
+                <h2>Data Analyst</h2>
+
+                <h4>DataSphere Technologies</h4>
+
+                <div class="job-meta">
+                    <span>📍 Hyderabad</span>
+                    <span>💼 Full Time</span>
+                    <span>🕒 1 day ago</span>
+                </div>
+
+                <p>
+                    Analyze business data and create dashboards using
+                    SQL, Excel and Power BI.
+                </p>
+
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                </div>
+
+                <div class="job-footer">
+                    <strong>₹5 - ₹8 LPA</strong>
+                    <a href="job-details.html">View Details →</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="job-item" data-category="Software" data-location="Remote">
+
+            <div class="company-logo purple">W</div>
+
+            <div class="job-content">
+
+                <h2>Frontend Developer</h2>
+
+                <h4>WebCraft Studio</h4>
+
+                <div class="job-meta">
+                    <span>📍 Remote</span>
+                    <span>💼 Full Time</span>
+                    <span>🕒 3 days ago</span>
+                </div>
+
+                <p>
+                    Build responsive web applications using HTML,
+                    CSS and JavaScript.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="job-footer">
+                    <strong>₹4 - ₹6 LPA</strong>
+                    <a href="job-details.html">View Details →</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="job-item" data-category="Software" data-location="Pune">
+
+            <div class="company-logo orange">S</div>
+
+            <div class="job-content">
+
+                <h2>Full Stack Developer</h2>
+
+                <h4>SoftNova Technologies</h4>
+
+                <div class="job-meta">
+                    <span>📍 Pune</span>
+                    <span>💼 Full Time</span>
+                    <span>🕒 4 days ago</span>
+                </div>
+
+                <p>
+                    Develop modern full-stack applications and REST APIs.
+                </p>
+
+                <div class="tags">
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="job-footer">
+                    <strong>₹5 - ₹9 LPA</strong>
+                    <a href="job-details.html">View Details →</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="job-item" data-category="Design" data-location="Chennai">
+
+            <div class="company-logo pink">U</div>
+
+            <div class="job-content">
+
+                <h2>UI/UX Designer</h2>
+
+                <h4>UXWorks Studio</h4>
+
+                <div class="job-meta">
+                    <span>📍 Chennai</span>
+                    <span>💼 Full Time</span>
+                    <span>🕒 5 days ago</span>
+                </div>
+
+                <p>
+                    Design modern user experiences and responsive
+                    digital products.
+                </p>
+
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>UI Design</span>
+                    <span>UX</span>
+                </div>
+
+                <div class="job-footer">
+                    <strong>₹3 - ₹6 LPA</strong>
+                    <a href="job-details.html">View Details →</a>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 JobHub. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
